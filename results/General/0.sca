@@ -1,20 +1,20 @@
 version 3
-run General-0-20230131-20:55:30-8882
+run General-2-20230201-21:40:04-18875
 attr configname General
-attr datetime 20230131-20:55:30
-attr datetimef 20230131-205530
+attr datetime 20230201-21:40:04
+attr datetimef 20230201-214004
 attr experiment General
 attr inifile omnetpp.ini
-attr iterationvars ""
-attr iterationvarsd ""
-attr iterationvarsf ""
-attr measurement ""
+attr iterationvars $0=16.67mps
+attr iterationvarsd 16.67mps
+attr iterationvarsf 16.67mps-
+attr measurement $0=16.67mps
 attr network simu5g.simulations.NR.networks.SingleCell_Standalone
-attr processid 8882
+attr processid 18875
 attr repetition 0
 attr replication #0
 attr resultdir results
-attr runnumber 0
+attr runnumber 2
 attr seedset 0
 config image-path ../../../images:../../../../inet4.4/images:../../../../veins_inet/images:../../../../veins-veins-5.2/images
 config output-scalar-file-append false
@@ -4105,12 +4105,12 @@ attr recordingmode mean
 attr source rlcCellPacketLossUl
 attr title "rlc Cell Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.gnb.cellularNic.rlc.um rlcCellPacketLossDl:mean 0.030654459138691
+scalar SingleCell_Standalone.gnb.cellularNic.rlc.um rlcCellPacketLossDl:mean 0.024610169491525
 attr recordingmode mean
 attr source rlcCellPacketLossDl
 attr title "rlc Cell Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.gnb.cellularNic.rlc.um rlcCellThroughputDl:mean 315059.82783568
+scalar SingleCell_Standalone.gnb.cellularNic.rlc.um rlcCellThroughputDl:mean 315067.79109229
 attr recordingmode mean
 attr source rlcCellThroughputDl
 attr title "Cell Throughput at the rlc layer DL, mean"
@@ -4165,11 +4165,11 @@ attr recordingmode sum
 attr source rlcPacketLossUl
 attr title "rlc Packet Loss, sum"
 attr unit ""
-scalar SingleCell_Standalone.gnb.cellularNic.rlc.um sentPacketToLowerLayer:count 39196
+scalar SingleCell_Standalone.gnb.cellularNic.rlc.um sentPacketToLowerLayer:count 38838
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.gnb.cellularNic.rlc.um sentPacketToLowerLayer:sum(packetBytes) 15255663
+scalar SingleCell_Standalone.gnb.cellularNic.rlc.um sentPacketToLowerLayer:sum(packetBytes) 15255488
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
@@ -4381,7 +4381,7 @@ attr recordingmode mean
 attr source avgServedBlocksUl
 attr title "Avg Served Blocks Ul, mean"
 attr unit blocks
-scalar SingleCell_Standalone.gnb.cellularNic.mac avgServedBlocksDl:mean 2.4567041236589
+scalar SingleCell_Standalone.gnb.cellularNic.mac avgServedBlocksDl:mean 2.4356875307198
 attr recordingmode mean
 attr source avgServedBlocksDl
 attr title "Avg Served Blocks Dl, mean"
@@ -4496,7 +4496,7 @@ attr recordingmode mean
 attr source macCellPacketLossDl
 attr title "Mac Cell Packet Loss Dl, mean"
 attr unit ""
-scalar SingleCell_Standalone.gnb.cellularNic.mac macCellThroughputDl:mean 311240.86526068
+scalar SingleCell_Standalone.gnb.cellularNic.mac macCellThroughputDl:mean 311569.30398356
 attr recordingmode mean
 attr source macCellThroughputDl
 attr title "Cell Throughput at the MAC layer DL, mean"
@@ -4521,40 +4521,40 @@ attr recordingmode mean
 attr source macThroughputDl
 attr title "Throughput at the MAC layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.gnb.cellularNic.mac macDelayDl:mean 0.006818379610442
+scalar SingleCell_Standalone.gnb.cellularNic.mac macDelayDl:mean 0.0064159268997454
 attr recordingmode mean
 attr source macDelayDl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToLowerLayer:count 40162
+scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToLowerLayer:count 39946
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToLowerLayer:sum(packetBytes) 15879316
+scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToLowerLayer:sum(packetBytes) 15898838
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToUpperLayer:count 39196
+scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToUpperLayer:count 38838
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToUpperLayer:sum(packetBytes) 39196
+scalar SingleCell_Standalone.gnb.cellularNic.mac sentPacketToUpperLayer:sum(packetBytes) 38838
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromLowerLayer:count 89327
+scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromLowerLayer:count 89110
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromLowerLayer:sum(packetBytes) 89327
+scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromLowerLayer:sum(packetBytes) 89110
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromUpperLayer:count 53946
+scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromUpperLayer:count 53588
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromUpperLayer
-scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromUpperLayer:sum(packetBytes) 30462913
+scalar SingleCell_Standalone.gnb.cellularNic.mac receivedPacketFromUpperLayer:sum(packetBytes) 30462738
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromUpperLayer
@@ -5726,19 +5726,19 @@ scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc sentPacketToLowerLayer:su
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2943
+scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2942
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 3025404
+scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 3024376
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2943
+scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2942
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 3028347
+scalar SingleCell_Standalone.ue[0].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 3027318
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -6502,7 +6502,7 @@ attr recordingmode mean
 attr source rlcDelayD2D
 attr title "Delay at the rlc layer D2D, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.0015739018457576
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.0013533834586466
 attr recordingmode mean
 attr source rlcPduPacketLossDl
 attr title "rlc Packet Loss, mean"
@@ -6527,7 +6527,7 @@ attr recordingmode mean
 attr source rlcPduThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0042993694468333
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0042632133714806
 attr recordingmode mean
 attr source rlcPduDelayDl
 attr title "Delay at the rlc layer UL, mean"
@@ -6552,7 +6552,7 @@ attr recordingmode mean
 attr source rlcCellThroughputUl
 attr title "Cell Throughput at the rlc layer UL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.0023728813559322
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.0027118644067797
 attr recordingmode mean
 attr source rlcPacketLossTotal
 attr title "rlc Packet Loss, mean"
@@ -6567,22 +6567,22 @@ attr recordingmode mean
 attr source rlcDelayUl
 attr title "Delay at the rlc layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcThroughputDl:mean 67325.023762184
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcThroughputDl:mean 67324.64147143
 attr recordingmode mean
 attr source rlcThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcDelayDl:mean 0.0081506617454301
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcDelayDl:mean 0.0077611833647862
 attr recordingmode mean
 attr source rlcDelayDl
 attr title "Delay at the rlc layer DL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.0023728813559322
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.0027118644067797
 attr recordingmode mean
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPacketLossDl:sum 7
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um rlcPacketLossDl:sum 8
 attr recordingmode sum
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, sum"
@@ -6605,19 +6605,19 @@ scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um sentPacketToLowerLayer:s
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2943
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2942
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 3028347
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 3027318
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 6989
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 6650
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3049528
+scalar SingleCell_Standalone.ue[0].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3048850
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -6809,7 +6809,7 @@ attr recordingmode mean
 attr source harqErrorRate_3rd_Ul
 attr title "Harq Error Rate Ul (3rd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.0030487804878049
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.0068493150684932
 attr recordingmode mean
 attr source harqErrorRate_2nd_Dl
 attr title "Harq Error Rate Dl (2nd tx), mean"
@@ -6819,7 +6819,7 @@ attr recordingmode mean
 attr source harqErrorRate_2nd_Ul
 attr title "Harq Error Rate Ul (2nd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.046930891400773
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.04390977443609
 attr recordingmode mean
 attr source harqErrorRate_1st_Dl
 attr title "Harq Error Rate Dl (1st tx), mean"
@@ -6834,12 +6834,12 @@ attr recordingmode mean
 attr source harqTxAttemptsUl
 attr title "Harq Tx Attempts Ul, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqTxAttemptsDl:mean 1.0470739733868
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqTxAttemptsDl:mean 1.0442105263158
 attr recordingmode mean
 attr source harqTxAttemptsDl
 attr title "Harq Tx Attempts Dl, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqErrorRateDl:mean 0.044957638699098
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac harqErrorRateDl:mean 0.042338709677419
 attr recordingmode mean
 attr source harqErrorRateDl
 attr title "Harq Error Rate Dl, mean"
@@ -6904,7 +6904,7 @@ attr recordingmode mean
 attr source macDelayUl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac macThroughputDl:mean 69325.279080471
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac macThroughputDl:mean 70137.641204923
 attr recordingmode mean
 attr source macThroughputDl
 attr title "Throughput at the MAC layer DL, mean"
@@ -6914,27 +6914,27 @@ attr recordingmode mean
 attr source macDelayDl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToLowerLayer:count 7318
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToLowerLayer:count 6944
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 7318
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 6944
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToUpperLayer:count 6989
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToUpperLayer:count 6650
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3049528
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3048850
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac receivedPacketFromLowerLayer:count 7318
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac receivedPacketFromLowerLayer:count 6944
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[0].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3219679
+scalar SingleCell_Standalone.ue[0].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3212376
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -6980,12 +6980,12 @@ attr recordingmode count
 attr source averageCqiUl
 attr title "Average Cqi reported in UL, count"
 attr unit cqi
-scalar SingleCell_Standalone.ue[0].cellularNic.nrPhy averageCqiDl:mean 12.793932768516
+scalar SingleCell_Standalone.ue[0].cellularNic.nrPhy averageCqiDl:mean 13.21198156682
 attr recordingmode mean
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, mean"
 attr unit cqi
-scalar SingleCell_Standalone.ue[0].cellularNic.nrPhy averageCqiDl:count 7318
+scalar SingleCell_Standalone.ue[0].cellularNic.nrPhy averageCqiDl:count 6944
 attr recordingmode count
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, count"
@@ -7031,17 +7031,17 @@ par SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] rsrqShift 22
 par SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] rsrqScale 1
 par SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] collectSinrStatistics true
 par SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
-scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] distance:mean 555.1942384385
+scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] distance:mean 547.1238207388
 attr recordingmode mean
 attr source distance
 attr title "distance between UE and serving base station, mean"
 attr unit meters
-scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] measuredSinrUl:mean 19.276162029818
+scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] measuredSinrUl:mean 19.65696726663
 attr recordingmode mean
 attr source measuredSinrUl
 attr title "SINR measured at feedback computation, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] measuredSinrDl:mean 31.134228443171
+scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] measuredSinrDl:mean 32.283879951384
 attr recordingmode mean
 attr source measuredSinrDl
 attr title "SINR measured at feedback computation, DL, mean"
@@ -7051,7 +7051,7 @@ attr recordingmode mean
 attr source rcvdSinrUl
 attr title "SINR measured at packet reception, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 28.159241401366
+scalar SingleCell_Standalone.ue[0].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 30.050571114306
 attr recordingmode mean
 attr source rcvdSinrDl
 attr title "SINR measured at packet reception, DL, mean"
@@ -7331,12 +7331,12 @@ par SingleCell_Standalone.ue[0].udp icmpv6Module "\"^.ipv6.icmpv6\""
 par SingleCell_Standalone.ue[0].udp crcMode "\"declared\""
 attr enum disabled,declared,computed
 par SingleCell_Standalone.ue[0].udp defaultMulticastLoop true
-scalar SingleCell_Standalone.ue[0].udp packetReceived:count 2943
+scalar SingleCell_Standalone.ue[0].udp packetReceived:count 2942
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[0].udp packetReceived:sum(packetBytes) 2966544
+scalar SingleCell_Standalone.ue[0].udp packetReceived:sum(packetBytes) 2965536
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
@@ -7351,7 +7351,7 @@ attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar SingleCell_Standalone.ue[0].udp passedUpPk:count 2943
+scalar SingleCell_Standalone.ue[0].udp passedUpPk:count 2942
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
@@ -7402,90 +7402,87 @@ par SingleCell_Standalone.ue[0].app[0] stopOperationExtraTime -1s
 attr unit s
 par SingleCell_Standalone.ue[0].app[0] stopOperationTimeout 2s
 attr unit s
-scalar SingleCell_Standalone.ue[0].app[0] packetReceived:count 2943
+scalar SingleCell_Standalone.ue[0].app[0] packetReceived:count 2942
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[0].app[0] packetReceived:sum(packetBytes) 2943000
+scalar SingleCell_Standalone.ue[0].app[0] packetReceived:sum(packetBytes) 2942000
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
 statistic SingleCell_Standalone.ue[0].app[0] endToEndDelay:histogram
-field count 2943
-field mean 0.0081542313454299
-field stddev 0.0051905451588604
+field count 2942
+field mean 0.0077647529647859
+field stddev 0.0045082078571716
 field min 0.0059996272
-field max 0.1109996272
-field sum 23.9979028496
-field sqrsum 0.27494710675462
+field max 0.0719996272
+field sum 22.8439032224
+field sqrsum 0.23714996717688
 attr interpolationmode none
 attr recordingmode histogram
 attr source dataAge(packetReceived)
 attr title "end-to-end delay"
 attr unit s
 bin	-inf	0
-bin	0.0049	1562
-bin	0.0067	602
-bin	0.0085	244
-bin	0.0103	303
-bin	0.0121	48
-bin	0.0139	76
-bin	0.0157	28
-bin	0.0175	30
-bin	0.0193	24
-bin	0.0211	1
-bin	0.0229	2
-bin	0.0247	0
-bin	0.0265	1
-bin	0.0283	2
-bin	0.0301	3
-bin	0.0319	2
-bin	0.0337	1
-bin	0.0355	0
+bin	0.0049	1683
+bin	0.0061	425
+bin	0.0073	177
+bin	0.0085	146
+bin	0.0097	101
+bin	0.0109	239
+bin	0.0121	43
+bin	0.0133	45
+bin	0.0145	18
+bin	0.0157	9
+bin	0.0169	23
+bin	0.0181	7
+bin	0.0193	1
+bin	0.0205	1
+bin	0.0217	2
+bin	0.0229	0
+bin	0.0241	0
+bin	0.0253	1
+bin	0.0265	0
+bin	0.0277	0
+bin	0.0289	1
+bin	0.0301	4
+bin	0.0313	2
+bin	0.0325	0
+bin	0.0337	0
+bin	0.0349	0
+bin	0.0361	0
 bin	0.0373	0
-bin	0.0391	0
+bin	0.0385	0
+bin	0.0397	0
 bin	0.0409	0
-bin	0.0427	0
+bin	0.0421	0
+bin	0.0433	0
 bin	0.0445	0
-bin	0.0463	1
+bin	0.0457	1
+bin	0.0469	0
 bin	0.0481	1
-bin	0.0499	4
-bin	0.0517	0
-bin	0.0535	1
+bin	0.0493	0
+bin	0.0505	4
+bin	0.0517	2
+bin	0.0529	0
+bin	0.0541	0
 bin	0.0553	0
-bin	0.0571	0
+bin	0.0565	0
+bin	0.0577	0
 bin	0.0589	0
-bin	0.0607	0
+bin	0.0601	0
+bin	0.0613	0
 bin	0.0625	0
-bin	0.0643	0
+bin	0.0637	0
+bin	0.0649	1
 bin	0.0661	0
-bin	0.0679	1
-bin	0.0697	4
-bin	0.0715	0
-bin	0.0733	0
-bin	0.0751	0
-bin	0.0769	0
-bin	0.0787	0
-bin	0.0805	0
-bin	0.0823	0
-bin	0.0841	0
-bin	0.0859	0
-bin	0.0877	0
-bin	0.0895	1
-bin	0.0913	0
-bin	0.0931	0
-bin	0.0949	0
-bin	0.0967	0
-bin	0.0985	0
-bin	0.1003	0
-bin	0.1021	0
-bin	0.1039	0
-bin	0.1057	0
-bin	0.1075	0
-bin	0.1093	1
-bin	0.1111	0
+bin	0.0673	0
+bin	0.0685	1
+bin	0.0697	0
+bin	0.0709	4
+bin	0.0721	0
 par SingleCell_Standalone.ue[0].at typename "\"inet.common.MessageDispatcher\""
 par SingleCell_Standalone.ue[0].at displayStringTextFormat "\"processed %p pk (%l)\""
 par SingleCell_Standalone.ue[0].at forwardServiceRegistration true
@@ -7653,19 +7650,19 @@ scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc sentPacketToLowerLayer:su
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2911
+scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2926
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 2992508
+scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 3007928
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2911
+scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2926
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 2995419
+scalar SingleCell_Standalone.ue[1].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 3010854
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -8429,7 +8426,7 @@ attr recordingmode mean
 attr source rlcDelayD2D
 attr title "Delay at the rlc layer D2D, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.0071437849071308
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.0037258815701929
 attr recordingmode mean
 attr source rlcPduPacketLossDl
 attr title "rlc Packet Loss, mean"
@@ -8454,7 +8451,7 @@ attr recordingmode mean
 attr source rlcPduThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0042203035060182
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0042267931080544
 attr recordingmode mean
 attr source rlcPduDelayDl
 attr title "Delay at the rlc layer UL, mean"
@@ -8479,7 +8476,7 @@ attr recordingmode mean
 attr source rlcCellThroughputUl
 attr title "Cell Throughput at the rlc layer UL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.013220338983051
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.008135593220339
 attr recordingmode mean
 attr source rlcPacketLossTotal
 attr title "rlc Packet Loss, mean"
@@ -8494,22 +8491,22 @@ attr recordingmode mean
 attr source rlcDelayUl
 attr title "Delay at the rlc layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcThroughputDl:mean 62941.64578807
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcThroughputDl:mean 62873.302575556
 attr recordingmode mean
 attr source rlcThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcDelayDl:mean 0.0090407157930609
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcDelayDl:mean 0.0091262694933699
 attr recordingmode mean
 attr source rlcDelayDl
 attr title "Delay at the rlc layer DL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.013220338983051
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.008135593220339
 attr recordingmode mean
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPacketLossDl:sum 39
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um rlcPacketLossDl:sum 24
 attr recordingmode sum
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, sum"
@@ -8532,19 +8529,19 @@ scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um sentPacketToLowerLayer:s
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2911
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2926
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 2995419
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 3010854
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 7673
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 7512
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3047191
+scalar SingleCell_Standalone.ue[1].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3049811
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -8736,7 +8733,7 @@ attr recordingmode mean
 attr source harqErrorRate_3rd_Ul
 attr title "Harq Error Rate Ul (3rd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.086274509803922
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.078838174273859
 attr recordingmode mean
 attr source harqErrorRate_2nd_Dl
 attr title "Harq Error Rate Dl (2nd tx), mean"
@@ -8746,7 +8743,7 @@ attr recordingmode mean
 attr source harqErrorRate_2nd_Ul
 attr title "Harq Error Rate Ul (2nd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.033233415873843
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.032210834553441
 attr recordingmode mean
 attr source harqErrorRate_1st_Dl
 attr title "Harq Error Rate Dl (1st tx), mean"
@@ -8761,12 +8758,12 @@ attr recordingmode mean
 attr source harqTxAttemptsUl
 attr title "Harq Tx Attempts Ul, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqTxAttemptsDl:mean 1.0361006125375
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqTxAttemptsDl:mean 1.0346112886049
 attr recordingmode mean
 attr source harqTxAttemptsDl
 attr title "Harq Tx Attempts Dl, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqErrorRateDl:mean 0.034842767295597
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac harqErrorRateDl:mean 0.033577769201081
 attr recordingmode mean
 attr source harqErrorRateDl
 attr title "Harq Error Rate Dl, mean"
@@ -8831,7 +8828,7 @@ attr recordingmode mean
 attr source macDelayUl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac macThroughputDl:mean 62011.910312176
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac macThroughputDl:mean 62204.892927561
 attr recordingmode mean
 attr source macThroughputDl
 attr title "Throughput at the MAC layer DL, mean"
@@ -8841,27 +8838,27 @@ attr recordingmode mean
 attr source macDelayDl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToLowerLayer:count 7950
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToLowerLayer:count 7773
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 7950
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 7773
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToUpperLayer:count 7673
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToUpperLayer:count 7512
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3047191
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3049811
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac receivedPacketFromLowerLayer:count 7951
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac receivedPacketFromLowerLayer:count 7773
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[1].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3184931
+scalar SingleCell_Standalone.ue[1].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3182226
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -8907,12 +8904,12 @@ attr recordingmode count
 attr source averageCqiUl
 attr title "Average Cqi reported in UL, count"
 attr unit cqi
-scalar SingleCell_Standalone.ue[1].cellularNic.nrPhy averageCqiDl:mean 12.496289774871
+scalar SingleCell_Standalone.ue[1].cellularNic.nrPhy averageCqiDl:mean 12.595908915477
 attr recordingmode mean
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, mean"
 attr unit cqi
-scalar SingleCell_Standalone.ue[1].cellularNic.nrPhy averageCqiDl:count 7951
+scalar SingleCell_Standalone.ue[1].cellularNic.nrPhy averageCqiDl:count 7773
 attr recordingmode count
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, count"
@@ -8958,17 +8955,17 @@ par SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] rsrqShift 22
 par SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] rsrqScale 1
 par SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] collectSinrStatistics true
 par SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
-scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] distance:mean 559.64845413597
+scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] distance:mean 552.36290563167
 attr recordingmode mean
 attr source distance
 attr title "distance between UE and serving base station, mean"
 attr unit meters
-scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] measuredSinrUl:mean 17.358037887991
+scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] measuredSinrUl:mean 21.066461830275
 attr recordingmode mean
 attr source measuredSinrUl
 attr title "SINR measured at feedback computation, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] measuredSinrDl:mean 28.572776435239
+scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] measuredSinrDl:mean 29.567518304089
 attr recordingmode mean
 attr source measuredSinrDl
 attr title "SINR measured at feedback computation, DL, mean"
@@ -8978,7 +8975,7 @@ attr recordingmode mean
 attr source rcvdSinrUl
 attr title "SINR measured at packet reception, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 26.373948928295
+scalar SingleCell_Standalone.ue[1].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 27.364858006327
 attr recordingmode mean
 attr source rcvdSinrDl
 attr title "SINR measured at packet reception, DL, mean"
@@ -9258,12 +9255,12 @@ par SingleCell_Standalone.ue[1].udp icmpv6Module "\"^.ipv6.icmpv6\""
 par SingleCell_Standalone.ue[1].udp crcMode "\"declared\""
 attr enum disabled,declared,computed
 par SingleCell_Standalone.ue[1].udp defaultMulticastLoop true
-scalar SingleCell_Standalone.ue[1].udp packetReceived:count 2911
+scalar SingleCell_Standalone.ue[1].udp packetReceived:count 2926
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[1].udp packetReceived:sum(packetBytes) 2934288
+scalar SingleCell_Standalone.ue[1].udp packetReceived:sum(packetBytes) 2949408
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
@@ -9278,7 +9275,7 @@ attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar SingleCell_Standalone.ue[1].udp passedUpPk:count 2911
+scalar SingleCell_Standalone.ue[1].udp passedUpPk:count 2926
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
@@ -9329,81 +9326,109 @@ par SingleCell_Standalone.ue[1].app[0] stopOperationExtraTime -1s
 attr unit s
 par SingleCell_Standalone.ue[1].app[0] stopOperationTimeout 2s
 attr unit s
-scalar SingleCell_Standalone.ue[1].app[0] packetReceived:count 2911
+scalar SingleCell_Standalone.ue[1].app[0] packetReceived:count 2926
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[1].app[0] packetReceived:sum(packetBytes) 2911000
+scalar SingleCell_Standalone.ue[1].app[0] packetReceived:sum(packetBytes) 2926000
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
 statistic SingleCell_Standalone.ue[1].app[0] endToEndDelay:histogram
-field count 2911
-field mean 0.0090442853930609
-field stddev 0.0093447192657846
+field count 2926
+field mean 0.0091298390933699
+field stddev 0.010068642856946
 field min 0.0059996272
 field max 0.1449996272
-field sum 26.3279147792
-field sqrsum 0.49222936950218
+field sum 26.7139091872
+field sqrsum 0.54042308170266
 attr interpolationmode none
 attr recordingmode histogram
 attr source dataAge(packetReceived)
 attr title "end-to-end delay"
 attr unit s
 bin	-inf	0
-bin	0.00545	2291
-bin	0.00825	321
-bin	0.01105	135
-bin	0.01385	36
-bin	0.01665	33
-bin	0.01945	9
-bin	0.02225	4
-bin	0.02505	2
-bin	0.02785	11
-bin	0.03065	11
-bin	0.03345	0
-bin	0.03625	0
-bin	0.03905	0
-bin	0.04185	0
-bin	0.04465	4
-bin	0.04745	10
-bin	0.05025	11
-bin	0.05305	0
+bin	0.00545	1783
+bin	0.00725	669
+bin	0.00905	82
+bin	0.01085	156
+bin	0.01265	71
+bin	0.01445	31
+bin	0.01625	26
+bin	0.01805	12
+bin	0.01985	7
+bin	0.02165	3
+bin	0.02345	4
+bin	0.02525	4
+bin	0.02705	3
+bin	0.02885	9
+bin	0.03065	1
+bin	0.03245	2
+bin	0.03425	0
+bin	0.03605	0
+bin	0.03785	1
+bin	0.03965	0
+bin	0.04145	0
+bin	0.04325	3
+bin	0.04505	0
+bin	0.04685	8
+bin	0.04865	9
+bin	0.05045	1
+bin	0.05225	2
+bin	0.05405	0
 bin	0.05585	0
-bin	0.05865	0
-bin	0.06145	0
-bin	0.06425	4
-bin	0.06705	7
-bin	0.06985	9
-bin	0.07265	1
-bin	0.07545	0
-bin	0.07825	0
+bin	0.05765	1
+bin	0.05945	0
+bin	0.06125	0
+bin	0.06305	0
+bin	0.06485	3
+bin	0.06665	6
+bin	0.06845	7
+bin	0.07025	1
+bin	0.07205	1
+bin	0.07385	0
+bin	0.07565	0
+bin	0.07745	1
+bin	0.07925	0
 bin	0.08105	0
-bin	0.08385	2
-bin	0.08665	3
-bin	0.08945	1
-bin	0.09225	1
-bin	0.09505	0
-bin	0.09785	0
-bin	0.10065	0
-bin	0.10345	2
+bin	0.08285	0
+bin	0.08465	3
+bin	0.08645	5
+bin	0.08825	2
+bin	0.09005	0
+bin	0.09185	1
+bin	0.09365	0
+bin	0.09545	0
+bin	0.09725	1
+bin	0.09905	0
+bin	0.10085	0
+bin	0.10265	0
+bin	0.10445	3
 bin	0.10625	0
-bin	0.10905	0
-bin	0.11185	1
-bin	0.11465	0
-bin	0.11745	0
-bin	0.12025	0
-bin	0.12305	1
-bin	0.12585	0
-bin	0.12865	0
+bin	0.10805	0
+bin	0.10985	0
+bin	0.11165	1
+bin	0.11345	0
+bin	0.11525	0
+bin	0.11705	1
+bin	0.11885	0
+bin	0.12065	0
+bin	0.12245	0
+bin	0.12425	1
+bin	0.12605	0
+bin	0.12785	0
+bin	0.12965	0
 bin	0.13145	0
-bin	0.13425	0
-bin	0.13705	0
-bin	0.13985	0
-bin	0.14265	1
-bin	0.14545	0
+bin	0.13325	0
+bin	0.13505	0
+bin	0.13685	0
+bin	0.13865	0
+bin	0.14045	0
+bin	0.14225	0
+bin	0.14405	1
+bin	0.14585	0
 par SingleCell_Standalone.ue[1].at typename "\"inet.common.MessageDispatcher\""
 par SingleCell_Standalone.ue[1].at displayStringTextFormat "\"processed %p pk (%l)\""
 par SingleCell_Standalone.ue[1].at forwardServiceRegistration true
@@ -9571,19 +9596,19 @@ scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc sentPacketToLowerLayer:su
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2632
+scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2701
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 2705696
+scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 2776628
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2632
+scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2701
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 2708328
+scalar SingleCell_Standalone.ue[2].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 2779329
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -10347,7 +10372,7 @@ attr recordingmode mean
 attr source rlcDelayD2D
 attr title "Delay at the rlc layer D2D, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.077214416615761
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.062445685909373
 attr recordingmode mean
 attr source rlcPduPacketLossDl
 attr title "rlc Packet Loss, mean"
@@ -10372,7 +10397,7 @@ attr recordingmode mean
 attr source rlcPduThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0044005287508266
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0044993379237291
 attr recordingmode mean
 attr source rlcPduDelayDl
 attr title "Delay at the rlc layer UL, mean"
@@ -10397,7 +10422,7 @@ attr recordingmode mean
 attr source rlcCellThroughputUl
 attr title "Cell Throughput at the rlc layer UL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.1062818336163
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.084406779661017
 attr recordingmode mean
 attr source rlcPacketLossTotal
 attr title "rlc Packet Loss, mean"
@@ -10412,22 +10437,22 @@ attr recordingmode mean
 attr source rlcDelayUl
 attr title "Delay at the rlc layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcThroughputDl:mean 59251.4950283
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcThroughputDl:mean 59301.022804814
 attr recordingmode mean
 attr source rlcThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcDelayDl:mean 0.014810267326444
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcDelayDl:mean 0.013608423390448
 attr recordingmode mean
 attr source rlcDelayDl
 attr title "Delay at the rlc layer DL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.1062818336163
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.084406779661017
 attr recordingmode mean
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPacketLossDl:sum 313
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um rlcPacketLossDl:sum 249
 attr recordingmode sum
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, sum"
@@ -10450,19 +10475,19 @@ scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um sentPacketToLowerLayer:s
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2632
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2701
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 2708328
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 2779329
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 7698
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 7661
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 2965139
+scalar SingleCell_Standalone.ue[2].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 2990122
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -10654,7 +10679,7 @@ attr recordingmode mean
 attr source harqErrorRate_3rd_Ul
 attr title "Harq Error Rate Ul (3rd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.059210526315789
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.065068493150685
 attr recordingmode mean
 attr source harqErrorRate_2nd_Dl
 attr title "Harq Error Rate Dl (2nd tx), mean"
@@ -10664,7 +10689,7 @@ attr recordingmode mean
 attr source harqErrorRate_2nd_Ul
 attr title "Harq Error Rate Ul (2nd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.03998961308751
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.038366175127235
 attr recordingmode mean
 attr source harqErrorRate_1st_Dl
 attr title "Harq Error Rate Dl (1st tx), mean"
@@ -10679,12 +10704,12 @@ attr recordingmode mean
 attr source harqTxAttemptsUl
 attr title "Harq Tx Attempts Ul, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqTxAttemptsDl:mean 1.0418290465056
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqTxAttemptsDl:mean 1.0405952225558
 attr recordingmode mean
 attr source harqTxAttemptsDl
 attr title "Harq Tx Attempts Dl, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqErrorRateDl:mean 0.040628115653041
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac harqErrorRateDl:mean 0.03925257085528
 attr recordingmode mean
 attr source harqErrorRateDl
 attr title "Harq Error Rate Dl, mean"
@@ -10749,7 +10774,7 @@ attr recordingmode mean
 attr source macDelayUl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac macThroughputDl:mean 58053.843147102
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac macThroughputDl:mean 58159.909924534
 attr recordingmode mean
 attr source macThroughputDl
 attr title "Throughput at the MAC layer DL, mean"
@@ -10759,27 +10784,27 @@ attr recordingmode mean
 attr source macDelayDl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToLowerLayer:count 8024
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToLowerLayer:count 7974
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 8024
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 7974
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToUpperLayer:count 7698
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToUpperLayer:count 7661
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 2965139
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 2990122
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac receivedPacketFromLowerLayer:count 8024
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac receivedPacketFromLowerLayer:count 7974
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[2].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3120773
+scalar SingleCell_Standalone.ue[2].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3134337
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -10825,12 +10850,12 @@ attr recordingmode count
 attr source averageCqiUl
 attr title "Average Cqi reported in UL, count"
 attr unit cqi
-scalar SingleCell_Standalone.ue[2].cellularNic.nrPhy averageCqiDl:mean 12.522557328016
+scalar SingleCell_Standalone.ue[2].cellularNic.nrPhy averageCqiDl:mean 12.469651366943
 attr recordingmode mean
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, mean"
 attr unit cqi
-scalar SingleCell_Standalone.ue[2].cellularNic.nrPhy averageCqiDl:count 8024
+scalar SingleCell_Standalone.ue[2].cellularNic.nrPhy averageCqiDl:count 7974
 attr recordingmode count
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, count"
@@ -10876,17 +10901,17 @@ par SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] rsrqShift 22
 par SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] rsrqScale 1
 par SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] collectSinrStatistics true
 par SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
-scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] distance:mean 575.28771030375
+scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] distance:mean 578.4952681541
 attr recordingmode mean
 attr source distance
 attr title "distance between UE and serving base station, mean"
 attr unit meters
-scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] measuredSinrUl:mean 18.971816322605
+scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] measuredSinrUl:mean 17.392862151837
 attr recordingmode mean
 attr source measuredSinrUl
 attr title "SINR measured at feedback computation, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] measuredSinrDl:mean 28.369056937548
+scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] measuredSinrDl:mean 29.907177879541
 attr recordingmode mean
 attr source measuredSinrDl
 attr title "SINR measured at feedback computation, DL, mean"
@@ -10896,7 +10921,7 @@ attr recordingmode mean
 attr source rcvdSinrUl
 attr title "SINR measured at packet reception, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 27.023018974643
+scalar SingleCell_Standalone.ue[2].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 27.690705656701
 attr recordingmode mean
 attr source rcvdSinrDl
 attr title "SINR measured at packet reception, DL, mean"
@@ -11176,12 +11201,12 @@ par SingleCell_Standalone.ue[2].udp icmpv6Module "\"^.ipv6.icmpv6\""
 par SingleCell_Standalone.ue[2].udp crcMode "\"declared\""
 attr enum disabled,declared,computed
 par SingleCell_Standalone.ue[2].udp defaultMulticastLoop true
-scalar SingleCell_Standalone.ue[2].udp packetReceived:count 2632
+scalar SingleCell_Standalone.ue[2].udp packetReceived:count 2701
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[2].udp packetReceived:sum(packetBytes) 2653056
+scalar SingleCell_Standalone.ue[2].udp packetReceived:sum(packetBytes) 2722608
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
@@ -11196,7 +11221,7 @@ attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar SingleCell_Standalone.ue[2].udp passedUpPk:count 2632
+scalar SingleCell_Standalone.ue[2].udp passedUpPk:count 2701
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
@@ -11247,41 +11272,41 @@ par SingleCell_Standalone.ue[2].app[0] stopOperationExtraTime -1s
 attr unit s
 par SingleCell_Standalone.ue[2].app[0] stopOperationTimeout 2s
 attr unit s
-scalar SingleCell_Standalone.ue[2].app[0] packetReceived:count 2632
+scalar SingleCell_Standalone.ue[2].app[0] packetReceived:count 2701
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[2].app[0] packetReceived:sum(packetBytes) 2632000
+scalar SingleCell_Standalone.ue[2].app[0] packetReceived:sum(packetBytes) 2701000
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
 statistic SingleCell_Standalone.ue[2].app[0] endToEndDelay:histogram
-field count 2632
-field mean 0.014813836926444
-field stddev 0.021925638368068
+field count 2701
+field mean 0.013611992990448
+field stddev 0.020718869079163
 field min 0.0059996272
-field max 0.1449996272
-field sum 38.9900187904
-field sqrsum 1.8424019286762
+field max 0.1459996272
+field sum 36.7659930672
+field sqrsum 1.6594915869002
 attr interpolationmode none
 attr recordingmode histogram
 attr source dataAge(packetReceived)
 attr title "end-to-end delay"
 attr unit s
 bin	-inf	0
-bin	0	2122
-bin	0.01	94
-bin	0.02	105
-bin	0.03	5
-bin	0.04	105
-bin	0.05	5
-bin	0.06	101
-bin	0.07	4
-bin	0.08	39
-bin	0.09	4
-bin	0.1	31
+bin	0	2232
+bin	0.01	113
+bin	0.02	87
+bin	0.03	6
+bin	0.04	89
+bin	0.05	7
+bin	0.06	78
+bin	0.07	6
+bin	0.08	34
+bin	0.09	6
+bin	0.1	26
 bin	0.11	0
 bin	0.12	12
 bin	0.13	0
@@ -11490,19 +11515,19 @@ scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc sentPacketToLowerLayer:su
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2881
+scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2907
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 2961668
+scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 2988396
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2881
+scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2907
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 2964549
+scalar SingleCell_Standalone.ue[3].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 2991303
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -12266,7 +12291,7 @@ attr recordingmode mean
 attr source rlcDelayD2D
 attr title "Delay at the rlc layer D2D, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.014010507880911
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.007035047326682
 attr recordingmode mean
 attr source rlcPduPacketLossDl
 attr title "rlc Packet Loss, mean"
@@ -12291,7 +12316,7 @@ attr recordingmode mean
 attr source rlcPduThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0042708703374782
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.004296148396239
 attr recordingmode mean
 attr source rlcPduDelayDl
 attr title "Delay at the rlc layer UL, mean"
@@ -12316,7 +12341,7 @@ attr recordingmode mean
 attr source rlcCellThroughputUl
 attr title "Cell Throughput at the rlc layer UL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.023389830508475
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.014576271186441
 attr recordingmode mean
 attr source rlcPacketLossTotal
 attr title "rlc Packet Loss, mean"
@@ -12331,22 +12356,22 @@ attr recordingmode mean
 attr source rlcDelayUl
 attr title "Delay at the rlc layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcThroughputDl:mean 61358.032866519
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcThroughputDl:mean 61376.033413328
 attr recordingmode mean
 attr source rlcThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcDelayDl:mean 0.010508379710378
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcDelayDl:mean 0.009384430493017
 attr recordingmode mean
 attr source rlcDelayDl
 attr title "Delay at the rlc layer DL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.023389830508475
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.014576271186441
 attr recordingmode mean
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPacketLossDl:sum 69
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um rlcPacketLossDl:sum 43
 attr recordingmode sum
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, sum"
@@ -12369,19 +12394,19 @@ scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um sentPacketToLowerLayer:s
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2881
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2907
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 2964549
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 2991303
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 7932
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 7805
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3043187
+scalar SingleCell_Standalone.ue[3].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3048785
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -12573,7 +12598,7 @@ attr recordingmode mean
 attr source harqErrorRate_3rd_Ul
 attr title "Harq Error Rate Ul (3rd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.070588235294118
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.061488673139159
 attr recordingmode mean
 attr source harqErrorRate_2nd_Dl
 attr title "Harq Error Rate Dl (2nd tx), mean"
@@ -12583,7 +12608,7 @@ attr recordingmode mean
 attr source harqErrorRate_2nd_Ul
 attr title "Harq Error Rate Ul (2nd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.042864346949067
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.03971304125032
 attr recordingmode mean
 attr source harqErrorRate_1st_Dl
 attr title "Harq Error Rate Dl (1st tx), mean"
@@ -12598,12 +12623,12 @@ attr recordingmode mean
 attr source harqTxAttemptsUl
 attr title "Harq Tx Attempts Ul, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqTxAttemptsDl:mean 1.0458900655572
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqTxAttemptsDl:mean 1.0420243433696
 attr recordingmode mean
 attr source harqTxAttemptsDl
 attr title "Harq Tx Attempts Dl, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqErrorRateDl:mean 0.043876567020251
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac harqErrorRateDl:mean 0.040447504302926
 attr recordingmode mean
 attr source harqErrorRateDl
 attr title "Harq Error Rate Dl, mean"
@@ -12668,7 +12693,7 @@ attr recordingmode mean
 attr source macDelayUl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac macThroughputDl:mean 60080.358075443
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac macThroughputDl:mean 60191.050431133
 attr recordingmode mean
 attr source macThroughputDl
 attr title "Throughput at the MAC layer DL, mean"
@@ -12678,27 +12703,27 @@ attr recordingmode mean
 attr source macDelayDl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToLowerLayer:count 8296
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToLowerLayer:count 8134
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 8296
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 8134
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToUpperLayer:count 7932
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToUpperLayer:count 7805
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3043187
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3048785
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac receivedPacketFromLowerLayer:count 8296
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac receivedPacketFromLowerLayer:count 8134
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[3].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3197445
+scalar SingleCell_Standalone.ue[3].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3200693
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -12744,12 +12769,12 @@ attr recordingmode count
 attr source averageCqiUl
 attr title "Average Cqi reported in UL, count"
 attr unit cqi
-scalar SingleCell_Standalone.ue[3].cellularNic.nrPhy averageCqiDl:mean 12.236740597878
+scalar SingleCell_Standalone.ue[3].cellularNic.nrPhy averageCqiDl:mean 12.526186378166
 attr recordingmode mean
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, mean"
 attr unit cqi
-scalar SingleCell_Standalone.ue[3].cellularNic.nrPhy averageCqiDl:count 8296
+scalar SingleCell_Standalone.ue[3].cellularNic.nrPhy averageCqiDl:count 8134
 attr recordingmode count
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, count"
@@ -12795,17 +12820,17 @@ par SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] rsrqShift 22
 par SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] rsrqScale 1
 par SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] collectSinrStatistics true
 par SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
-scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] distance:mean 574.32639008934
+scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] distance:mean 575.6776505603
 attr recordingmode mean
 attr source distance
 attr title "distance between UE and serving base station, mean"
 attr unit meters
-scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] measuredSinrUl:mean 18.336388483521
+scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] measuredSinrUl:mean 17.840678898079
 attr recordingmode mean
 attr source measuredSinrUl
 attr title "SINR measured at feedback computation, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] measuredSinrDl:mean 28.516019515388
+scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] measuredSinrDl:mean 29.179169888362
 attr recordingmode mean
 attr source measuredSinrDl
 attr title "SINR measured at feedback computation, DL, mean"
@@ -12815,7 +12840,7 @@ attr recordingmode mean
 attr source rcvdSinrUl
 attr title "SINR measured at packet reception, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 24.962198461853
+scalar SingleCell_Standalone.ue[3].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 25.959664931175
 attr recordingmode mean
 attr source rcvdSinrDl
 attr title "SINR measured at packet reception, DL, mean"
@@ -13095,12 +13120,12 @@ par SingleCell_Standalone.ue[3].udp icmpv6Module "\"^.ipv6.icmpv6\""
 par SingleCell_Standalone.ue[3].udp crcMode "\"declared\""
 attr enum disabled,declared,computed
 par SingleCell_Standalone.ue[3].udp defaultMulticastLoop true
-scalar SingleCell_Standalone.ue[3].udp packetReceived:count 2881
+scalar SingleCell_Standalone.ue[3].udp packetReceived:count 2907
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[3].udp packetReceived:sum(packetBytes) 2904048
+scalar SingleCell_Standalone.ue[3].udp packetReceived:sum(packetBytes) 2930256
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
@@ -13115,7 +13140,7 @@ attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar SingleCell_Standalone.ue[3].udp passedUpPk:count 2881
+scalar SingleCell_Standalone.ue[3].udp passedUpPk:count 2907
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
@@ -13166,85 +13191,67 @@ par SingleCell_Standalone.ue[3].app[0] stopOperationExtraTime -1s
 attr unit s
 par SingleCell_Standalone.ue[3].app[0] stopOperationTimeout 2s
 attr unit s
-scalar SingleCell_Standalone.ue[3].app[0] packetReceived:count 2881
+scalar SingleCell_Standalone.ue[3].app[0] packetReceived:count 2907
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[3].app[0] packetReceived:sum(packetBytes) 2881000
+scalar SingleCell_Standalone.ue[3].app[0] packetReceived:sum(packetBytes) 2907000
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
 statistic SingleCell_Standalone.ue[3].app[0] endToEndDelay:histogram
-field count 2881
-field mean 0.010511949310378
-field stddev 0.015397350653299
+field count 2907
+field mean 0.0093880000930169
+field stddev 0.010723717483061
 field min 0.0059996272
-field max 0.1989996272
-field sum 30.2849259632
-field sqrsum 1.0011394191588
+field max 0.1459996272
+field sum 27.2909162704
+field sqrsum 0.59039165148882
 attr interpolationmode none
 attr recordingmode histogram
 attr source dataAge(packetReceived)
 attr title "end-to-end delay"
 attr unit s
 bin	-inf	0
-bin	0.00574	2333
-bin	0.00934	275
-bin	0.01294	92
-bin	0.01654	31
-bin	0.02014	3
-bin	0.02374	14
-bin	0.02734	15
-bin	0.03094	7
-bin	0.03454	4
-bin	0.03814	1
-bin	0.04174	5
-bin	0.04534	13
-bin	0.04894	16
-bin	0.05254	0
-bin	0.05614	0
-bin	0.05974	1
-bin	0.06334	8
-bin	0.06694	18
-bin	0.07054	2
-bin	0.07414	1
-bin	0.07774	1
-bin	0.08134	1
-bin	0.08494	13
-bin	0.08854	4
-bin	0.09214	0
-bin	0.09574	1
-bin	0.09934	0
-bin	0.10294	5
-bin	0.10654	1
-bin	0.11014	1
-bin	0.11374	1
-bin	0.11734	0
-bin	0.12094	1
-bin	0.12454	2
-bin	0.12814	0
-bin	0.13174	0
-bin	0.13534	1
-bin	0.13894	2
-bin	0.14254	2
-bin	0.14614	0
-bin	0.14974	1
-bin	0.15334	0
-bin	0.15694	1
-bin	0.16054	0
-bin	0.16414	0
-bin	0.16774	1
-bin	0.17134	0
-bin	0.17494	1
-bin	0.17854	0
-bin	0.18214	0
-bin	0.18574	1
-bin	0.18934	0
-bin	0.19294	0
-bin	0.19654	1
-bin	0.20014	0
+bin	0.004	2291
+bin	0.008	369
+bin	0.012	79
+bin	0.016	49
+bin	0.02	6
+bin	0.024	14
+bin	0.028	20
+bin	0.032	3
+bin	0.036	1
+bin	0.04	0
+bin	0.044	13
+bin	0.048	19
+bin	0.052	1
+bin	0.056	1
+bin	0.06	0
+bin	0.064	13
+bin	0.068	8
+bin	0.072	0
+bin	0.076	0
+bin	0.08	0
+bin	0.084	8
+bin	0.088	5
+bin	0.092	0
+bin	0.096	0
+bin	0.1	0
+bin	0.104	2
+bin	0.108	3
+bin	0.112	0
+bin	0.116	0
+bin	0.12	0
+bin	0.124	1
+bin	0.128	0
+bin	0.132	0
+bin	0.136	0
+bin	0.14	0
+bin	0.144	1
+bin	0.148	0
 par SingleCell_Standalone.ue[3].at typename "\"inet.common.MessageDispatcher\""
 par SingleCell_Standalone.ue[3].at displayStringTextFormat "\"processed %p pk (%l)\""
 par SingleCell_Standalone.ue[3].at forwardServiceRegistration true
@@ -13412,19 +13419,19 @@ scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc sentPacketToLowerLayer:su
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2926
+scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc sentPacketToUpperLayer:count 2911
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 3007928
+scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc sentPacketToUpperLayer:sum(packetBytes) 2992508
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2926
+scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc receivedPacketFromLowerLayer:count 2911
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 3010854
+scalar SingleCell_Standalone.ue[4].cellularNic.pdcpRrc receivedPacketFromLowerLayer:sum(packetBytes) 2995419
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -14188,7 +14195,7 @@ attr recordingmode mean
 attr source rlcDelayD2D
 attr title "Delay at the rlc layer D2D, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.0032467532467532
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPduPacketLossDl:mean 0.0061370610296625
 attr recordingmode mean
 attr source rlcPduPacketLossDl
 attr title "rlc Packet Loss, mean"
@@ -14213,7 +14220,7 @@ attr recordingmode mean
 attr source rlcPduThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0041778260345038
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPduDelayDl:mean 0.0042081189251002
 attr recordingmode mean
 attr source rlcPduDelayDl
 attr title "Delay at the rlc layer UL, mean"
@@ -14238,7 +14245,7 @@ attr recordingmode mean
 attr source rlcCellThroughputUl
 attr title "Cell Throughput at the rlc layer UL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.008135593220339
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPacketLossTotal:mean 0.013220338983051
 attr recordingmode mean
 attr source rlcPacketLossTotal
 attr title "rlc Packet Loss, mean"
@@ -14253,22 +14260,22 @@ attr recordingmode mean
 attr source rlcDelayUl
 attr title "Delay at the rlc layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcThroughputDl:mean 64497.006307085
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcThroughputDl:mean 64531.710692666
 attr recordingmode mean
 attr source rlcThroughputDl
 attr title "Throughput at the rlc layer DL, mean"
 attr unit Bps
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcDelayDl:mean 0.010417278722078
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcDelayDl:mean 0.010832713682171
 attr recordingmode mean
 attr source rlcDelayDl
 attr title "Delay at the rlc layer DL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.008135593220339
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPacketLossDl:mean 0.013220338983051
 attr recordingmode mean
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPacketLossDl:sum 24
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um rlcPacketLossDl:sum 39
 attr recordingmode sum
 attr source rlcPacketLossDl
 attr title "rlc Packet Loss, sum"
@@ -14291,19 +14298,19 @@ scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um sentPacketToLowerLayer:s
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2926
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um sentPacketToUpperLayer:count 2911
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 3010854
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um sentPacketToUpperLayer:sum(packetBytes) 2995419
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 8316
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um receivedPacketFromLowerLayer:count 8785
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3052182
+scalar SingleCell_Standalone.ue[4].cellularNic.nrRlc.um receivedPacketFromLowerLayer:sum(packetBytes) 3050679
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -14475,7 +14482,7 @@ attr recordingmode mean
 attr source measuredItbs
 attr title "TBS index, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_4th_Dl:mean -nan
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_4th_Dl:mean 0
 attr recordingmode mean
 attr source harqErrorRate_4th_Dl
 attr title "Harq Error Rate Dl (4th tx), mean"
@@ -14485,7 +14492,7 @@ attr recordingmode mean
 attr source harqErrorRate_4th_Ul
 attr title "Harq Error Rate Ul (4th tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_3rd_Dl:mean 0
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_3rd_Dl:mean 0.041666666666667
 attr recordingmode mean
 attr source harqErrorRate_3rd_Dl
 attr title "Harq Error Rate Dl (3rd tx), mean"
@@ -14495,7 +14502,7 @@ attr recordingmode mean
 attr source harqErrorRate_3rd_Ul
 attr title "Harq Error Rate Ul (3rd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.14159292035398
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_2nd_Dl:mean 0.16842105263158
 attr recordingmode mean
 attr source harqErrorRate_2nd_Dl
 attr title "Harq Error Rate Dl (2nd tx), mean"
@@ -14505,7 +14512,7 @@ attr recordingmode mean
 attr source harqErrorRate_2nd_Ul
 attr title "Harq Error Rate Ul (2nd tx), mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.027176527176527
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRate_1st_Dl:mean 0.032441661923734
 attr recordingmode mean
 attr source harqErrorRate_1st_Dl
 attr title "Harq Error Rate Dl (1st tx), mean"
@@ -14520,12 +14527,12 @@ attr recordingmode mean
 attr source harqTxAttemptsUl
 attr title "Harq Tx Attempts Ul, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqTxAttemptsDl:mean 1.0310245310245
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqTxAttemptsDl:mean 1.0381331815595
 attr recordingmode mean
 attr source harqTxAttemptsDl
 attr title "Harq Tx Attempts Dl, mean"
 attr unit ""
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRateDl:mean 0.030090972708188
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac harqErrorRateDl:mean 0.036732456140351
 attr recordingmode mean
 attr source harqErrorRateDl
 attr title "Harq Error Rate Dl, mean"
@@ -14590,7 +14597,7 @@ attr recordingmode mean
 attr source macDelayUl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac macThroughputDl:mean 62748.141774363
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac macThroughputDl:mean 62262.529351645
 attr recordingmode mean
 attr source macThroughputDl
 attr title "Throughput at the MAC layer DL, mean"
@@ -14600,27 +14607,27 @@ attr recordingmode mean
 attr source macDelayDl
 attr title "Delay at the MAC layer UL, mean"
 attr unit s
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToLowerLayer:count 8574
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToLowerLayer:count 9120
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 8574
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToLowerLayer:sum(packetBytes) 9120
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToUpperLayer:count 8316
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToUpperLayer:count 8785
 attr interpolationmode none
 attr recordingmode count
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3052182
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac sentPacketToUpperLayer:sum(packetBytes) 3050679
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source sentPacketToUpperLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac receivedPacketFromLowerLayer:count 8574
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac receivedPacketFromLowerLayer:count 9121
 attr interpolationmode none
 attr recordingmode count
 attr source receivedPacketFromLowerLayer
-scalar SingleCell_Standalone.ue[4].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3156855
+scalar SingleCell_Standalone.ue[4].cellularNic.nrMac receivedPacketFromLowerLayer:sum(packetBytes) 3169544
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source receivedPacketFromLowerLayer
@@ -14666,12 +14673,12 @@ attr recordingmode count
 attr source averageCqiUl
 attr title "Average Cqi reported in UL, count"
 attr unit cqi
-scalar SingleCell_Standalone.ue[4].cellularNic.nrPhy averageCqiDl:mean 12.521693491952
+scalar SingleCell_Standalone.ue[4].cellularNic.nrPhy averageCqiDl:mean 12.158644885429
 attr recordingmode mean
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, mean"
 attr unit cqi
-scalar SingleCell_Standalone.ue[4].cellularNic.nrPhy averageCqiDl:count 8574
+scalar SingleCell_Standalone.ue[4].cellularNic.nrPhy averageCqiDl:count 9121
 attr recordingmode count
 attr source averageCqiDl
 attr title "Average Cqi reported in DL, count"
@@ -14717,17 +14724,17 @@ par SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] rsrqShift 22
 par SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] rsrqScale 1
 par SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] collectSinrStatistics true
 par SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
-scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] distance:mean 567.8661086937
+scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] distance:mean 576.78615258025
 attr recordingmode mean
 attr source distance
 attr title "distance between UE and serving base station, mean"
 attr unit meters
-scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] measuredSinrUl:mean 13.998598832805
+scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] measuredSinrUl:mean 15.424047532477
 attr recordingmode mean
 attr source measuredSinrUl
 attr title "SINR measured at feedback computation, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] measuredSinrDl:mean 29.729333705499
+scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] measuredSinrDl:mean 29.03409206422
 attr recordingmode mean
 attr source measuredSinrDl
 attr title "SINR measured at feedback computation, DL, mean"
@@ -14737,7 +14744,7 @@ attr recordingmode mean
 attr source rcvdSinrUl
 attr title "SINR measured at packet reception, UL, mean"
 attr unit dB
-scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 27.86604785141
+scalar SingleCell_Standalone.ue[4].cellularNic.nrChannelModel[0] rcvdSinrDl:mean 26.425104745577
 attr recordingmode mean
 attr source rcvdSinrDl
 attr title "SINR measured at packet reception, DL, mean"
@@ -15017,12 +15024,12 @@ par SingleCell_Standalone.ue[4].udp icmpv6Module "\"^.ipv6.icmpv6\""
 par SingleCell_Standalone.ue[4].udp crcMode "\"declared\""
 attr enum disabled,declared,computed
 par SingleCell_Standalone.ue[4].udp defaultMulticastLoop true
-scalar SingleCell_Standalone.ue[4].udp packetReceived:count 2926
+scalar SingleCell_Standalone.ue[4].udp packetReceived:count 2911
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[4].udp packetReceived:sum(packetBytes) 2949408
+scalar SingleCell_Standalone.ue[4].udp packetReceived:sum(packetBytes) 2934288
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
@@ -15037,7 +15044,7 @@ attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar SingleCell_Standalone.ue[4].udp passedUpPk:count 2926
+scalar SingleCell_Standalone.ue[4].udp passedUpPk:count 2911
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
@@ -15088,104 +15095,115 @@ par SingleCell_Standalone.ue[4].app[0] stopOperationExtraTime -1s
 attr unit s
 par SingleCell_Standalone.ue[4].app[0] stopOperationTimeout 2s
 attr unit s
-scalar SingleCell_Standalone.ue[4].app[0] packetReceived:count 2926
+scalar SingleCell_Standalone.ue[4].app[0] packetReceived:count 2911
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar SingleCell_Standalone.ue[4].app[0] packetReceived:sum(packetBytes) 2926000
+scalar SingleCell_Standalone.ue[4].app[0] packetReceived:sum(packetBytes) 2911000
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
 statistic SingleCell_Standalone.ue[4].app[0] endToEndDelay:histogram
-field count 2926
-field mean 0.010421647522078
-field stddev 0.0084822536467985
+field count 2911
+field mean 0.010837082482171
+field stddev 0.0081053235145819
 field min 0.0059995696
-field max 0.1059995696
-field sum 30.4937406496
-field sqrsum 0.52824475044603
+field max 0.1049995696
+field sum 31.5467471056
+field sqrsum 0.53305084402085
 attr interpolationmode none
 attr recordingmode histogram
 attr source dataAge(packetReceived)
 attr title "end-to-end delay"
 attr unit s
 bin	-inf	0
-bin	0.0049	506
-bin	0.0063	613
-bin	0.0077	520
-bin	0.0091	466
-bin	0.0105	201
-bin	0.0119	308
-bin	0.0133	61
-bin	0.0147	77
-bin	0.0161	22
-bin	0.0175	11
-bin	0.0189	28
-bin	0.0203	8
-bin	0.0217	17
-bin	0.0231	1
-bin	0.0245	2
-bin	0.0259	7
-bin	0.0273	3
-bin	0.0287	8
-bin	0.0301	3
-bin	0.0315	3
-bin	0.0329	6
-bin	0.0343	1
-bin	0.0357	0
-bin	0.0371	0
-bin	0.0385	1
-bin	0.0399	0
-bin	0.0413	0
-bin	0.0427	0
-bin	0.0441	0
-bin	0.0455	4
-bin	0.0469	3
-bin	0.0483	4
-bin	0.0497	5
-bin	0.0511	2
-bin	0.0525	3
-bin	0.0539	2
+bin	0.0049	372
+bin	0.0061	612
+bin	0.0073	294
+bin	0.0085	181
+bin	0.0097	463
+bin	0.0109	437
+bin	0.0121	196
+bin	0.0133	98
+bin	0.0145	33
+bin	0.0157	21
+bin	0.0169	31
+bin	0.0181	16
+bin	0.0193	9
+bin	0.0205	24
+bin	0.0217	10
+bin	0.0229	20
+bin	0.0241	7
+bin	0.0253	6
+bin	0.0265	1
+bin	0.0277	1
+bin	0.0289	2
+bin	0.0301	7
+bin	0.0313	10
+bin	0.0325	3
+bin	0.0337	3
+bin	0.0349	1
+bin	0.0361	0
+bin	0.0373	0
+bin	0.0385	0
+bin	0.0397	1
+bin	0.0409	1
+bin	0.0421	0
+bin	0.0433	0
+bin	0.0445	1
+bin	0.0457	1
+bin	0.0469	0
+bin	0.0481	2
+bin	0.0493	0
+bin	0.0505	7
+bin	0.0517	10
+bin	0.0529	6
+bin	0.0541	1
 bin	0.0553	0
-bin	0.0567	0
-bin	0.0581	1
-bin	0.0595	0
-bin	0.0609	0
-bin	0.0623	0
+bin	0.0565	0
+bin	0.0577	0
+bin	0.0589	0
+bin	0.0601	0
+bin	0.0613	0
+bin	0.0625	0
 bin	0.0637	0
-bin	0.0651	4
-bin	0.0665	1
-bin	0.0679	6
-bin	0.0693	2
-bin	0.0707	5
-bin	0.0721	0
-bin	0.0735	1
-bin	0.0749	0
-bin	0.0763	0
-bin	0.0777	1
-bin	0.0791	0
+bin	0.0649	2
+bin	0.0661	0
+bin	0.0673	0
+bin	0.0685	2
+bin	0.0697	0
+bin	0.0709	13
+bin	0.0721	2
+bin	0.0733	1
+bin	0.0745	0
+bin	0.0757	0
+bin	0.0769	0
+bin	0.0781	0
+bin	0.0793	0
 bin	0.0805	0
-bin	0.0819	0
-bin	0.0833	0
-bin	0.0847	2
-bin	0.0861	1
-bin	0.0875	1
-bin	0.0889	3
-bin	0.0903	0
-bin	0.0917	1
-bin	0.0931	0
-bin	0.0945	0
-bin	0.0959	0
+bin	0.0817	0
+bin	0.0829	0
+bin	0.0841	1
+bin	0.0853	0
+bin	0.0865	0
+bin	0.0877	0
+bin	0.0889	0
+bin	0.0901	0
+bin	0.0913	0
+bin	0.0925	1
+bin	0.0937	0
+bin	0.0949	0
+bin	0.0961	0
 bin	0.0973	0
-bin	0.0987	0
-bin	0.1001	0
-bin	0.1015	0
-bin	0.1029	0
-bin	0.1043	0
-bin	0.1057	1
-bin	0.1071	0
+bin	0.0985	0
+bin	0.0997	0
+bin	0.1009	0
+bin	0.1021	0
+bin	0.1033	0
+bin	0.1045	1
+bin	0.1057	0
 par SingleCell_Standalone.ue[4].at typename "\"inet.common.MessageDispatcher\""
 par SingleCell_Standalone.ue[4].at displayStringTextFormat "\"processed %p pk (%l)\""
 par SingleCell_Standalone.ue[4].at forwardServiceRegistration true
